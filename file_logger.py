@@ -5,9 +5,9 @@ class file_logger:
     """
     Constructor
     """
-    def __init__(self, log_level):
+    def __init__(self, log_level, filename='file_log1.txt'):
         self.__log_level__ = log_level
-        self._file_= open('file_log.txt', 'a+')
+        self._file_= open(filename, 'a+')
 
 
     """
